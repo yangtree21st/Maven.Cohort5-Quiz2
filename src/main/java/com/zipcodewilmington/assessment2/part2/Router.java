@@ -19,9 +19,10 @@ public class Router {
     }
 
     public void update(String path, String studentController) {
-        router.put(path)
+        router.put(path, studentController);
     }
 
     public void remove(String path) {
+        router.remove(path);
     }
 }

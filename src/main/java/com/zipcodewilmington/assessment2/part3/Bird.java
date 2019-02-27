@@ -1,15 +1,21 @@
 package com.zipcodewilmington.assessment2.part3;
 
-public class Bird {
-    public String move() {
-        return null;
-    }
 
-    public void setMigrationMonth(String expected) {
+    public abstract class Bird implements Animal{
 
-    }
 
-    public String getMigrationMonth() {
-        return null;
+        String migrationMonth;
+
+        public String move() {
+            return "fly";
+        }
+
+
+        public void setMigrationMonth(String expected) {
+            this.migrationMonth = expected;
+        }
+
+        public String getMigrationMonth() {
+            return migrationMonth;
+        }
     }
-}
